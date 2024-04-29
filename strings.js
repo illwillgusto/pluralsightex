@@ -5,3 +5,9 @@ let title = `Genius`;
 
 //  String concatenation with the plus operator
 let fullName = firstName + " " + lastName;
+
+// String concatenation with template literals
+fullName = `${firstName} ${lastName}`;
+console.log(fullName);
+
+
