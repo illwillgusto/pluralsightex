@@ -8,3 +8,4 @@ console.log(x);
 // How do we set a variable to a empty value purposefully
 let manager = null;
 console.log(manager);5
+console.log(typeof(manager)); // object, it's not really an object 
