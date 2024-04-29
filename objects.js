@@ -11,3 +11,14 @@ obj1.isActive = true;
 obj1.startDate = new Date("April 29, 2024");
 obj1.vacationDays = 26;
 console.log(obj1);
+
+
+// Populating an Object on creation with object literal syntax
+let obj3 = {
+  firstName: "Dyl",
+  lastName: "Ray",
+  isActive: true,
+  startDate: new Date("April 29, 2024"),
+  vacationDays: 26
+};
+console.log(obj3);
