@@ -13,3 +13,7 @@ console.log(fullName);
 // Creating multi-line strings with \n
 let bio = "Line 1\nLine 2\nLine 3";
 console.log(bio);
+
+// Creating multi-line strings with backticks
+bio = ` About Will Walton:
+Frontend Web Developer`;
