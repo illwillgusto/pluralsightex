@@ -22,3 +22,8 @@ let obj3 = {
   vacationDays: 26
 };
 console.log(obj3);
+
+// Accessing properties from an object
+console.log(`First Name: ${obj3.firstName}`);
+console.log(`Last Name: ${obj3.lastName}`);
+console.log(`Start Date: ${obj3.startDate}`);
