@@ -21,3 +21,9 @@ Frontend Web Developer`;
 // Escaping characters
 let quote = 'Some once said, "Make everyday count."';
 quote = "Someone once said, \"Make everyday count.\"";
+
+// String length
+let length = quote.length;
+console.log(`Quote Length: ${length}`);
+
+
