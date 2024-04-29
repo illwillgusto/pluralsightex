@@ -34,3 +34,8 @@ console.log(obj3);
 
 // Accessing a property that doesn't exist
 console.log(`Non-existent value: ${obj3.middleName}`);
+
+// Objects are passed by reference, not value
+let obj4 = obj3;
+obj4.lastName = "Smith";
+console.log(`Last Name (obj3): ${obj3.lastName}`); // obj3 and obj4 now point to the same block of memory once obj4 was declared
