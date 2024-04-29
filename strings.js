@@ -3,4 +3,5 @@ let firstName = "Dylan";
 let lastName = 'Walton';
 let title = `Genius`;
 
-//  String concatenation with the plus operator 
+//  String concatenation with the plus operator
+let fullName = firstName + " " + lastName;
