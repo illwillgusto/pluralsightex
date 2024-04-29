@@ -12,3 +12,8 @@ console.log(date4);
 console.log(`Full Year: ${date4.getFullYear()}`);
 console.log(`Full Month: ${date4.getMonth()}`);
 console.log(`Full Day: ${date4.getDay()}`);
+
+// Milliseconds from the epoch
+console.log(`Time: ${date4.getTime()}`);
+let date5 = new Date(0);
+console.log(date5.toUTCString());
