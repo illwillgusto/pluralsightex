@@ -31,3 +31,6 @@ console.log(`Start Date: ${obj3["startDate"]}`);
 // Deleting props from an object
 delete obj3.vacationDays;
 console.log(obj3);
+
+// Accessing a property that doesn't exist
+console.log(`Non-existent value: ${obj3.middleName}`);
