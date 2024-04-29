@@ -26,4 +26,6 @@ quote = "Someone once said, \"Make everyday count.\"";
 let length = quote.length;
 console.log(`Quote Length: ${length}`);
 
-
+// Accessing specific characters
+let secondCharacter = quote[1];
+console.log(`Second Character: ${secondCharacter}`);
