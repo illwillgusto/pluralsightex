@@ -29,3 +29,9 @@ console.log(`Quote Length: ${length}`);
 // Accessing specific characters
 let secondCharacter = quote[1];
 console.log(`Second Character: ${secondCharacter}`);
+
+// Changing case
+let uppercaseName = fullName.toUpperCase();
+console.log(uppercaseName);
+let lowercaseName = fullName.toLowerCase();
+console.log(lowercaseName);
