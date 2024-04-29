@@ -44,3 +44,8 @@ console.log(`Index 2: ${idx2}`);
 // indexOf a value that doesn't exist
 let idx3 = fullName.indexOf("xyz");
 console.log(`Index 3: ${idx3}`); // -1 (didn't find it)
+
+
+// Does a string contain a substring
+let doesContain = fullName.includes("Dyl");
+console.log(doesContain);
