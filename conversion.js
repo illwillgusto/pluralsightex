@@ -25,3 +25,20 @@ console.log(typeof(ageNewNum)); // object
 let ageString2 = "forty-one";
 let ageNum2 = Number(ageString2);
 console.log(`Age String 2: ${ageNum2}`); // Age String 2: NaN
+let isInvalid = isNaN(ageNum2);
+console.log(`Is Invalid: ${isInvalid}`);
+
+// Convert a value to a boolean
+let num1 = 1;
+let num2 = 0;
+let bool1 = Boolean(num1); // true
+let bool2 = Boolean(num2); // false
+console.log(`Num1: ${num1} Num 2: ${num2}`);
+
+let str1 = "Hello";
+let bool3 = Boolean(str1);
+let val1;
+let bool4 = Boolean(val1);
+console.log(`Bool 3: ${bool3} Bool 4: ${val1}`);
+
+
