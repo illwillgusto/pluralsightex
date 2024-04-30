@@ -18,4 +18,12 @@ console.log(jsonValue);
 
 // Convert Value Back to Object
 let newEmployee = JSON.parse(jsonValue); // this method will take in your string and return an object
-console.log(newEmployee); 
+console.log(newEmployee);
+
+// Writing JSON Directly
+let jsonString = `{
+  "firstName": "Bruce",
+  "lastName": "Wayne"
+}`;
+let obj = JSON.parse(jsonString);
+console.log(obj);
