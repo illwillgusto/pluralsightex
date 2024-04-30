@@ -10,4 +10,6 @@ let fixed = num1.toFixed(3); // return only 3 decimals
 console.log(`Fixed Type: ${typeof(fixed)} Fixed Value: ${fixed}`); // a string type is returned
 
 // Display in locale-specific format
-
+let num2 = 1_000_000;
+console.log(`USA: ${num2.toLocaleString('en-US')}`);
+console.log(`Greece: ${num2.toLocaleString('el-EL')}`);
