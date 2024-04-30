@@ -12,3 +12,10 @@ let firstName = "Bruce";
 let description = `${firstName} is ${age} years old.`; // using temporal literals to combine the 2 to make a string
 console.log(description);
 console.log(typeof(description));
+
+// Converting a string to a number
+let ageString = "21";
+let ageNum = Number(ageString); // utilizing the number function
+console.log(typeof(ageNum));
+let ageNewNum = new Number(ageString); // You don't want this
+console.log(typeof(ageNewNum)); // object
