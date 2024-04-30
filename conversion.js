@@ -19,3 +19,9 @@ let ageNum = Number(ageString); // utilizing the number function
 console.log(typeof(ageNum));
 let ageNewNum = new Number(ageString); // You don't want this
 console.log(typeof(ageNewNum)); // object
+
+
+// What about NaN
+let ageString2 = "forty-one";
+let ageNum2 = Number(ageString2);
+console.log(`Age String 2: ${ageNum2}`); // Age String 2: NaN
