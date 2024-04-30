@@ -41,4 +41,7 @@ let val1;
 let bool4 = Boolean(val1);
 console.log(`Bool 3: ${bool3} Bool 4: ${val1}`);
 
+// Converting a boolean to a string
+let bool5 = true;
+console.log(`Bool 5: ${bool5}`);
 
