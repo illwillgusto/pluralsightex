@@ -13,3 +13,9 @@ let employee = {
 // Convert to JSON String
 let jsonValue = JSON.stringify(employee); //this function will take any object you pass in and convert it into a JSON string
 console.log(jsonValue);
+jsonValue = JSON.stringify(employee, null, 2); // 2 spaces per inditation level
+console.log(jsonValue);
+
+// Convert Value Back to Object
+let newEmployee = JSON.parse(jsonValue); // this method will take in your string and return an object
+console.log(newEmployee); 
