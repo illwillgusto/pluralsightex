@@ -6,4 +6,8 @@ console.log(`Floor: ${Math.floor(num1)}`); // first number before the value
 
 
 // Fixed
+let fixed = num1.toFixed(3); // return only 3 decimals
+console.log(`Fixed Type: ${typeof(fixed)} Fixed Value: ${fixed}`); // a string type is returned
+
+// Display in locale-specific format
 
