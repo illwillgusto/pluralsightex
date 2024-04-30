@@ -27,3 +27,7 @@ let jsonString = `{
 }`;
 let obj = JSON.parse(jsonString);
 console.log(obj);
+
+// Improperly formatted JSON
+let notJSON = "hello!";
+let newObj = JSON.parse(notJSON); // an error will be handled in this case  
