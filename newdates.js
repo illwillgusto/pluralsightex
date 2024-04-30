@@ -17,3 +17,12 @@ console.log(`Date Time: ${date1.toTimeString()}`);
 console.log(`Locale en-US: ${date1.toLocaleTimeString('en-US')}`);
 console.log(`Locale en-GB: ${date1.toLocaleTimeString('en-GB')}`);
 console.log(`Locale ja-JP: ${date1.toLocaleTimeString('ja-JP')}`);
+
+
+// Custom date string
+let options = {
+  dateStyle: "short",
+  timeStyle: "short"
+};
+console.log(`Custom Date: ${date1.toLocaleString('en-US', options)}`); // this will allow for the date and time in short format
+console.log(`Custom Date: ${date1.toLocaleString('ar-KW', options)}`);
