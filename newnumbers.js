@@ -13,3 +13,17 @@ console.log(`Fixed Type: ${typeof(fixed)} Fixed Value: ${fixed}`); // a string t
 let num2 = 1_000_000;
 console.log(`USA: ${num2.toLocaleString('en-US')}`);
 console.log(`Greece: ${num2.toLocaleString('el-EL')}`);
+
+//Intl Format Currency
+let salary = 100000;
+let monthlySalary = salary / 12;
+console.log(`Monthly Salary: ${monthlySalary.toFixed(2)}`);
+
+let formatter1 = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD'}); // converting to a specific country currency
+console.log(`Monthly Salary in US Currency: ${formatter1.format(monthlySalary)}`);
+
+let formatter2 = new Intl.NumberFormat('de-DE', {style: 'currency', currency: 'EUR'});
+console.log(`EUR: ${formatter2.format(monthlySalary)}`);
+
+let formatter3 = new Intl.NumberFormat('ja-JA', {style: 'currency', currency: 'JPY'});
+console.log(`YEN: ${formatter3.format(monthlySalary)}`);
