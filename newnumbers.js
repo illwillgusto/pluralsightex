@@ -17,7 +17,7 @@ console.log(`Greece: ${num2.toLocaleString('el-EL')}`);
 //Intl Format Currency
 let salary = 100000;
 let monthlySalary = salary / 12;
-console.log(`Monthly Salary: ${monthlySalary.toFixed(2)}`);
+console.log(`Monthly Salary: ${monthlySalary.toFixed(2)}`); // this is indicating we only want 2 numbers after the decimal
 
 let formatter1 = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD'}); // converting to a specific country currency
 console.log(`Monthly Salary in US Currency: ${formatter1.format(monthlySalary)}`);

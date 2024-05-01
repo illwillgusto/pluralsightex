@@ -17,10 +17,12 @@ console.log(bio);
 // Creating multi-line strings with backticks
 bio = ` About Will Walton:
 Frontend Web Developer`;
+console.log(bio);
 
 // Escaping characters
 let quote = 'Some once said, "Make everyday count."';
 quote = "Someone once said, \"Make everyday count.\"";
+console.log(quote);
 
 // String length
 let length = quote.length;
