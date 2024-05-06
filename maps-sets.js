@@ -26,4 +26,34 @@ console.log(map1.get([])); // undefined
 
 // Delete values
 map1.delete("firstName"); // use the delete method and pass in the key we want the value deleted for
-console.log(`Map size: ${map1.size}`); // 4 
+console.log(`Map size: ${map1.size}`); // 4
+
+// Creating a Set
+const set1 = new Set();
+set1.add("Will");
+
+// Checking the Set Size
+console.log(`Set size: ${set1.size}`);
+
+// Trying to add the "same" value
+set1.add("Will");
+console.log(`Set size: ${set1.size}`);
+
+// Adding in complex values
+const team1 = new Set();
+const emp1 = {
+  firstName: "Will",
+  lastName: "Walton"
+};
+team1.add(emp1);
+console.log(`Set size: ${team1.size}`);
+
+// Detecting if a Set has an object
+console.log(`Does have employee: ${team1.has(emp1)}`);
+
+// Removing values from a Set
+team1.delete(emp1);
+console.log(`Set size: ${team1.size}`);
+
+// Remove all values from the Set
+team1.clear();
