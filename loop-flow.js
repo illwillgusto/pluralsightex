@@ -23,7 +23,9 @@ for (let employee of employees) {
 for (let emp of employees) {
   for (let property in emp) {
     if (property === "dateBirth") {
-      
+      continue;
     }
+    console.log(`${property}: ${emp[property]}`);
   }
+  console.log('---');
 }
