@@ -9,3 +9,12 @@ for (let i = 0; i < employees.length; i++) {
   console.log(`Name: ${employees[i].firstName} ${employees[i].lastName}`);
 }
 
+console.log('-----');
+
+// Searching only for first names that start with 'B'
+for (let employee of employees) {
+  if (!employee.firstName.startsWith('B')) {
+    continue; // this means we are going to stop the current iteration but will immediately move to the next iteration
+  }
+  console.log(`Name: ${employee.firstName} ${employee.lastName}`);
+}
