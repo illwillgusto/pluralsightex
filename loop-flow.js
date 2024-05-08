@@ -18,3 +18,12 @@ for (let employee of employees) {
   }
   console.log(`Name: ${employee.firstName} ${employee.lastName}`);
 }
+
+// Nested Loop Control Flow
+for (let emp of employees) {
+  for (let property in emp) {
+    if (property === "dateBirth") {
+      
+    }
+  }
+}
