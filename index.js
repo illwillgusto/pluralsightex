@@ -71,6 +71,7 @@ function addEmployee() {
     let startDateYear = getInput("Employee Start Year (1990-2024): ", isStartYearValid);
     let startDateMonth = getInput("Employee Start Date Month (1-12): ", isStartMonthValid);
     let startDateDay = getInput("Employee Start Date Day (1-31): ", isStartDayValid);
+    employee.startDate = new Date(startDateYear, startDateMonth - 1, startDateDay);
 
 
 
