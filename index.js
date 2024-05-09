@@ -62,13 +62,7 @@ function listEmployees() {
   console.log(`Employee List ----------------------------`);
     console.log('');
 
-    for (let emp of employees) {
-      for (let property in emp) {
-        console.log(`${property}: ${emp[property]}`);
-      }
-      console.log('');
-      prompt('Press enter to continue...');
-    }
+    
     console.log(`Employee list completed`);
 }
 
