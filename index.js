@@ -117,6 +117,10 @@ switch (command) {
     searchById();
     break;
 
+  case 'search-by-name':
+    searchByName();
+    break;
+
   default:
     console.log('Unsupported command. Exiting...');
     process.exit(1);
