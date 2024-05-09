@@ -68,6 +68,9 @@ function addEmployee() {
     let employee = {};
     employee.firstName = getInput("First Name: ", isStringInputValid);
     employee.lastName = getInput("Last Name: ", isStringInputValid);
+    let startDateYear = getInput("Employee Start Year (1990-2024): ", isStartYearValid);
+    let startDateMonth = getInput("Employee Start Date Month (1-12): ", isStartMonthValid);
+    let startDateDay = getInput("Employee Start Date Day (1-31): ", isStartDayValid);
 
 
 
