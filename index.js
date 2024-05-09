@@ -62,7 +62,10 @@ function listEmployees() {
   console.log(`Employee List ----------------------------`);
     console.log('');
 
-    
+    employee.forEach(e => {
+      logEmployee(e);
+      prompt('Press enter to continue...');
+    });
     console.log(`Employee list completed`);
 }
 
