@@ -14,7 +14,7 @@ function getInput(promptText, validator, transformer) {
   let value = prompt(promptText);
   if (validator && !validator(value)) {
     console.error(`--Invalid input`);
-    return getInput(promptText, validator, transformer);
+    return getInput(promptText, validator, transformer); // recursion leverage to implement the goals we have within the application 
   }
   if (transformer) {
     return transformer(value);
