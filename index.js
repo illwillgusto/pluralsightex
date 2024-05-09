@@ -4,8 +4,9 @@ import employees from './data.json' assert { type: 'json' }
 import createPrompt from 'prompt-sync';
 let prompt = createPrompt();
 
-function getInput(promptText = "Enter value: ", validator, transformer) {
-
+function getInput(promptText, validator, transformer) {
+  let value = prompt(promptText);
+  return value;
 }
 
 
