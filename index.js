@@ -101,6 +101,10 @@ switch (command) {
     addEmployee();
     break;
 
+  case 'search-by-id':
+    searchById();
+    break;
+
   default:
     console.log('Unsupported command. Exiting...');
     process.exit(1);
