@@ -62,7 +62,7 @@ function listEmployees() {
   console.log(`Employee List ----------------------------`);
     console.log('');
 
-    employee.forEach(e => {
+    employees.forEach(e => {
       logEmployee(e);
       prompt('Press enter to continue...');
     });
@@ -88,7 +88,7 @@ function addEmployee() {
 }
 // Application execution
 
-// Get the command the user wants to exexcute
+// Get the command the user wants to execute
 const command = process.argv[2].toLowerCase();
 
 switch (command) {
