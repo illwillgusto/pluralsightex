@@ -24,7 +24,7 @@ const isBooleanInputValid = function (input) {
 
 const isStartYearValid = function (input) {
   let numValue = Number(input);
-  if (!Number.isInteger(numValue) || numValue < 1990 || numValue > 2023) {
+  if (!Number.isInteger(numValue) || numValue < 1990 || numValue > 2024) {
     return false;
   }
   return true;
