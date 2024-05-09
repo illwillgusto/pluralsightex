@@ -112,7 +112,14 @@ function searchByName() {
     }
     return true;
   });
+  results.forEach((e, idx) => {
+    console.log("object");
+    console.log(`Search Result ${idx + 1} -----------------------`);
+    logEmployee(e);
+  });
 }
+
+
 // Application execution
 
 // Get the command the user wants to execute
