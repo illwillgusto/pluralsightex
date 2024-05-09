@@ -86,6 +86,18 @@ function addEmployee() {
     const json = JSON.stringify(employee, null, 2);
     console.log(`Employee: ${json}`);
 }
+
+// Search for employees by id
+function searchById() {
+  const id = getInput("Employee ID: ", null, Number);
+  const result = employees.find(e => e.id === id);
+  if (result) {
+    console.log("");
+    logEmployee(result);
+  } else {
+    console.log("No results...");
+  }
+}
 // Application execution
 
 // Get the command the user wants to execute
