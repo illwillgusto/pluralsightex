@@ -98,6 +98,13 @@ function searchById() {
     console.log("No results...");
   }
 }
+
+// Search for employees by name
+function searchByName() {
+  const firstNameSearch = getInput("First Name: ").toLowerCase();
+  const lastNameSearch = getInput("Last Name: ").toLowerCase();
+
+}
 // Application execution
 
 // Get the command the user wants to execute
