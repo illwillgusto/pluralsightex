@@ -14,6 +14,10 @@ function getInput(promptText, validator, transformer) {
 const isStringInputValid = function (input) {
   return (input) ? true : false;
 }
+const isBooleanInputValid = function (input) {
+  return (input === "yes" || input === "no");
+}
+
 
 
 // Application commands
