@@ -9,6 +9,12 @@ function getInput(promptText, validator, transformer) {
   return value;
 }
 
+// Validator functions ---------------------------------------------
+
+const isStringInputValid = function (input) {
+  return (input) ? true : false;
+}
+
 
 // Application commands
 
