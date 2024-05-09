@@ -72,7 +72,7 @@ function addEmployee() {
     let startDateMonth = getInput("Employee Start Date Month (1-12): ", isStartMonthValid);
     let startDateDay = getInput("Employee Start Date Day (1-31): ", isStartDayValid);
     employee.startDate = new Date(startDateYear, startDateMonth - 1, startDateDay);
-
+    employee.isActive = getInput("Is employee active (yes or no): ", isBooleanInputValid);
 
 
     // Output Employee JSON
