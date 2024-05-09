@@ -18,7 +18,29 @@ const isBooleanInputValid = function (input) {
   return (input === "yes" || input === "no");
 }
 
+const isStartYearValid = function (input) {
+  let numValue = Number(input);
+  if (!Number.isInteger(numValue) || numValue < 1990 || numValue > 2023) {
+    return false;
+  }
+  return true;
+}
 
+const isStartMonthValid = function (input) {
+  let numValue = Number(input);
+  if (!Number.isInteger(numValue) || numValue < 1 || numValue > 12) {
+    return false;
+  }
+  return true;
+}
+
+const isStartDayValid = function (input) {
+  let numValue = Number(input);
+  if (!Number.isInteger(numValue) || numValue < 1 || numValue > 31) {
+    return false;
+  }
+  return true;
+}
 
 // Application commands
 
