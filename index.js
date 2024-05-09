@@ -14,7 +14,7 @@ function getInput(promptText, validator, transformer) {
   let value = prompt(promptText);
   if (validator && !validator(value)) {
     console.error(`--Invalid input`);
-    return getInput(promptText, validator, transformer); // recursion leverage to implement the goals we have within the application 
+    return getInput(promptText, validator, transformer); // recursion leverage to implement the goals we have within the application
   }
   if (transformer) {
     return transformer(value);
@@ -32,29 +32,7 @@ const isBooleanInputValid = function (input) {
   return (input === "yes" || input === "no");
 }
 
-const isStartYearValid = function (input) {
-  let numValue = Number(input);
-  if (!Number.isInteger(numValue) || numValue < 1990 || numValue > 2024) {
-    return false;
-  }
-  return true;
-}
 
-const isStartMonthValid = function (input) {
-  let numValue = Number(input);
-  if (!Number.isInteger(numValue) || numValue < 1 || numValue > 12) {
-    return false;
-  }
-  return true;
-}
-
-const isStartDayValid = function (input) {
-  let numValue = Number(input);
-  if (!Number.isInteger(numValue) || numValue < 1 || numValue > 31) {
-    return false;
-  }
-  return true;
-}
 
 // Application commands
 
