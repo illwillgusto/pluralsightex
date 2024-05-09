@@ -4,6 +4,12 @@ import employees from './data.json' assert { type: 'json' }
 import createPrompt from 'prompt-sync';
 let prompt = createPrompt();
 
+const logEmployee = (employee) => {
+  Object.entries(employee).forEach(entry => {
+    console.log(`${entry[0]}: ${entry[1]}`);
+  });
+}
+
 function getInput(promptText, validator, transformer) {
   let value = prompt(promptText);
   if (validator && !validator(value)) {
