@@ -38,4 +38,18 @@ export {
   loadData
 };
 
+
+Package Manager
+a tool that enables you to install and manage software written by other developers
+into your own software projects.
+
+Options:
+Package management clients:
+npm
+yarn
+pnpm
+
+Registries
+npm
+
   */
