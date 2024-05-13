@@ -7,4 +7,11 @@ It is common for these tests to get executed every time code is committed to a
 project to ensure the new code does not break application functionality.
 
 -unit testing is just one type of testing that complex software projects may leverage
-*/
+
+
+JavaScript Testing Frameworks
+-Jest
+-Mocha
+-Jasmine
+-AVA
+-Vitest*/
