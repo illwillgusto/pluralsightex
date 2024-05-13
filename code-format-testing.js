@@ -14,4 +14,12 @@ JavaScript Testing Frameworks
 -Mocha
 -Jasmine
 -AVA
--Vitest*/
+-Vitest
+
+
+Code Coverage
+a metric designed to tell you how much of an application is actually tested
+by the collection of unit tests that have been written for it.
+While there are different approaches for calculating this metric, it is generally
+assumed that a higher code coverage number is better than a lower one
+as it means more of the application is tested by the unit tests. */
